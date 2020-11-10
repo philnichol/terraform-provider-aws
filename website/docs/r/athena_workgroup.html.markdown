@@ -36,9 +36,9 @@ resource "aws_athena_workgroup" "example" {
 
 The following arguments are supported:
 
-* `name` - (Required) Name of the workgroup.
+* `name` - (Required) Name of the workgroup. Must be between 1 and 128 characters in length. Must contain only alphanumeric characters, periods, underscores, and hyphens.
 * `configuration` - (Optional) Configuration block with various settings for the workgroup. Documented below.
-* `description` - (Optional) Description of the workgroup.
+* `description` - (Optional) Description of the workgroup. Must be less than 1024 characters in length.
 * `state` - (Optional) State of the workgroup. Valid values are `DISABLED` or `ENABLED`. Defaults to `ENABLED`.
 * `tags` - (Optional) Key-value map of resource tags for the workgroup.
 * `force_destroy` - (Optional) The option to delete the workgroup and its contents even if the workgroup contains any named queries.

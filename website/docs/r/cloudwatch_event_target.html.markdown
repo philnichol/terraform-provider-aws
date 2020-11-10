@@ -263,7 +263,7 @@ The following arguments are supported:
 
 `run_command_targets` support the following:
 
-* `key` - (Required) Can be either `tag:tag-key` or `InstanceIds`.
+* `key` - (Required) Can be either `tag:tag-key` or `InstanceIds`. Must be between 1 and 128 characters in length.
 * `values` - (Required) If Key is `tag:tag-key`, Values is a list of tag values. If Key is `InstanceIds`, Values is a list of Amazon EC2 instance IDs.
 
 `ecs_target` support the following:
@@ -271,9 +271,9 @@ The following arguments are supported:
 * `group` - (Optional) Specifies an ECS task group for the task. The maximum length is 255 characters.
 * `launch_type` - (Optional) Specifies the launch type on which your task is running. The launch type that you specify here must match one of the launch type (compatibilities) of the target task. Valid values are EC2 or FARGATE.
 * `network_configuration` - (Optional) Use this if the ECS task uses the awsvpc network mode. This specifies the VPC subnets and security groups associated with the task, and whether a public IP address is to be used. Required if launch_type is FARGATE because the awsvpc mode is required for Fargate tasks.
-* `platform_version` - (Optional) Specifies the platform version for the task. Specify only the numeric portion of the platform version, such as 1.1.0. This is used only if LaunchType is FARGATE. For more information about valid platform versions, see [AWS Fargate Platform Versions](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
+* `platform_version` - (Optional) Specifies the platform version for the task. Specify only the numeric portion of the platform version, such as 1.1.0. This is used only if LaunchType is FARGATE. For more information about valid platform versions, see [AWS Fargate Platform Versions](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html). Must be less than or equal to 1600 characters in length.
 * `task_count` - (Optional) The number of tasks to create based on the TaskDefinition. The default is 1.
-* `task_definition_arn` - (Required) The ARN of the task definition to use if the event target is an Amazon ECS cluster.
+* `task_definition_arn` - (Required) The ARN of the task definition to use if the event target is an Amazon ECS cluster. Must be between 1 and 1600 characters in length.
 
 `network_configuration` support the following:
 
@@ -292,7 +292,7 @@ For more information, see [Task Networking](https://docs.aws.amazon.com/AmazonEC
 
 `kinesis_target` support the following:
 
-* `partition_key_path` - (Optional) The JSON path to be extracted from the event and used as the partition key.
+* `partition_key_path` - (Optional) The JSON path to be extracted from the event and used as the partition key. Must be between 1 and 256 characters in length.
 
 `sqs_target` support the following:
 
@@ -301,7 +301,7 @@ For more information, see [Task Networking](https://docs.aws.amazon.com/AmazonEC
 `input_transformer` support the following:
 
 * `input_paths` - (Optional) Key value pairs specified in the form of JSONPath (for example, time = $.time)
-* `input_template` - (Required) Structure containing the template body.
+* `input_template` - (Required) Structure containing the template body. Must be between 1 and 8192 characters in length.
 
 ## Import
 

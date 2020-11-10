@@ -187,14 +187,14 @@ resource "aws_codedeploy_deployment_group" "example" {
 
 The following arguments are supported:
 
-* `app_name` - (Required) The name of the application.
-* `deployment_group_name` - (Required) The name of the deployment group.
+* `app_name` - (Required) The name of the application. Must be less than or equal to 100 characters in length.
+* `deployment_group_name` - (Required) The name of the deployment group. Must be less than or equal to 100 characters in length.
 * `service_role_arn` - (Required) The service role ARN that allows deployments.
 * `alarm_configuration` - (Optional) Configuration block of alarms associated with the deployment group (documented below).
 * `auto_rollback_configuration` - (Optional) Configuration block of the automatic rollback configuration associated with the deployment group (documented below).
 * `autoscaling_groups` - (Optional) Autoscaling groups associated with the deployment group.
 * `blue_green_deployment_config` - (Optional) Configuration block of the blue/green deployment options for a deployment group (documented below).
-* `deployment_config_name` - (Optional) The name of the group's deployment config. The default is "CodeDeployDefault.OneAtATime".
+* `deployment_config_name` - (Optional) The name of the group's deployment config. The default is "CodeDeployDefault.OneAtATime". Must be less than or equal to 100 characters in length.
 * `deployment_style` - (Optional) Configuration block of the type of deployment, either in-place or blue/green, you want to run and whether to route deployment traffic behind a load balancer (documented below).
 * `ec2_tag_filter` - (Optional) Tag filters associated with the deployment group. See the AWS docs for details.
 * `ec2_tag_set` - (Optional) Configuration block(s) of Tag filters associated with the deployment group, which are also referred to as tag groups (documented below). See the AWS docs for details.

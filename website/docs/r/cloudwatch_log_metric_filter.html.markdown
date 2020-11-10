@@ -36,7 +36,7 @@ The following arguments are supported:
 
 * `name` - (Required) A name for the metric filter.
 * `pattern` - (Required) A valid [CloudWatch Logs filter pattern](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/FilterAndPatternSyntax.html)
-  for extracting metric data out of ingested log events.
+  for extracting metric data out of ingested log events. Must be less than or equal to 1024 characters in length.
 * `log_group_name` - (Required) The name of the log group to associate the metric filter with.
 * `metric_transformation` - (Required) A block defining collection of information
 	needed to define how metric data gets emitted. See below.
@@ -45,7 +45,7 @@ The `metric_transformation` block supports the following arguments:
 
 * `name` - (Required) The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
 * `namespace` - (Required) The destination namespace of the CloudWatch metric.
-* `value` - (Required) What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
+* `value` - (Required) What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event. Must be less than or equal to 100 characters in length.
 * `default_value` - (Optional) The value to emit when a filter pattern does not match a log event.
 
 ## Attributes Reference
