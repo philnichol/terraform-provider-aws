@@ -25,7 +25,7 @@ The following arguments are supported:
 * `id` - (Optional) Identifier of the Site.
 * `name` - (Optional) Name of the Site.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

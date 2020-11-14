@@ -59,7 +59,7 @@ The following arguments are supported:
 
 * `bucket` - (Required) The name of the bucket
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

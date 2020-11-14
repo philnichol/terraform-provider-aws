@@ -33,7 +33,7 @@ The following arguments are supported:
 * `preferred_instance_classes` - (Optional) Ordered list of preferred DocumentDB DB instance classes. The first match in this list will be returned. If no preferred matches are found and the original search returned more than one result, an error is returned. (Conflicts with `instance_class`.)
 * `vpc` - (Optional) Enable to show only VPC.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attribute is exported:
 

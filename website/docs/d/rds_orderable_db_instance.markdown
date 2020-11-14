@@ -58,7 +58,7 @@ The following arguments are supported:
 * `supports_storage_encryption` - (Optional) Enable this to ensure a DB instance supports encrypted storage.
 * `vpc` - (Optional) Boolean that indicates whether to show only VPC or non-VPC offerings.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

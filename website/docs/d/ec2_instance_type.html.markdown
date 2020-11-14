@@ -26,7 +26,7 @@ The following argument is supported:
 
 * `instance_type` - (Required) Instance
 
-## Attribute Reference
+Attributes Reference
 
 In addition to the argument above, the following attributes are exported:
 

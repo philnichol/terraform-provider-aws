@@ -26,7 +26,7 @@ The following arguments are supported:
 * `availability_zone_id` - (Optional) Availability Zone identifier.
 * `site_id` - (Optional) Site identifier.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

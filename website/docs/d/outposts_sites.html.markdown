@@ -20,7 +20,7 @@ data "aws_outposts_sites" "all" {}
 
 There are no arguments available for this data source.
 
-## Attribute Reference
+Attributes Reference
 
 The following attributes are exported:
 

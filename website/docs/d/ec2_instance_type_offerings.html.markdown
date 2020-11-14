@@ -40,7 +40,7 @@ The following arguments are supported:
 * `name` - (Required) Name of the filter. The `location` filter depends on the top-level `location_type` argument and if not specified, defaults to the current region.
 * `values` - (Required) List of one or more values for the filter.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

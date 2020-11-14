@@ -42,7 +42,7 @@ The following arguments are supported:
 
 [dcg-filters]: https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeCustomerGateways.html
 
-## Attribute Reference
+Attributes Reference
 
 In addition to the arguments above, the following attributes are exported:
 

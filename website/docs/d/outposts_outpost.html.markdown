@@ -26,7 +26,7 @@ The following arguments are supported:
 * `name` - (Optional) Name of the Outpost.
 * `arn` - (Optional) Amazon Resource Name (ARN).
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

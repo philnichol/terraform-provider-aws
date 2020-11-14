@@ -24,7 +24,7 @@ The following arguments are required:
 
 * `arn` - (Required) Outpost Amazon Resource Name (ARN).
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

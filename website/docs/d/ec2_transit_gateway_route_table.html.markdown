@@ -48,7 +48,7 @@ The following arguments are supported:
 * `name` - (Required) Name of the filter.
 * `values` - (Required) List of one or more values for the filter.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

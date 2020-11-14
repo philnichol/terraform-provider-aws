@@ -28,7 +28,7 @@ The following arguments are supported:
 * `node_type` - (Optional) Redshift Cluster node type. e.g. `dc2.8xlarge`
 * `preferred_node_types` - (Optional) Ordered list of preferred Redshift Cluster node types. The first match in this list will be returned. If no preferred matches are found and the original search returned more than one result, an error is returned.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

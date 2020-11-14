@@ -24,7 +24,7 @@ The following arguments are supported:
 
 * `cluster_name` - (Required) Name of the cluster.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

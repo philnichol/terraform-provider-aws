@@ -24,7 +24,7 @@ The following arguments are supported:
 
 * `arn` - (Required) Amazon Resource Name (ARN) of the certificate authority.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

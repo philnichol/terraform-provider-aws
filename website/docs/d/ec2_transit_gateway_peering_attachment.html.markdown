@@ -48,7 +48,7 @@ which take the following arguments:
 * `values` - (Required) Set of values that are accepted for the given field.
   An EC2 Transit Gateway Peering Attachment be selected if any one of the given values matches.
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 

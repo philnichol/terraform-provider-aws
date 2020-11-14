@@ -47,7 +47,7 @@ The following arguments are supported:
 
 * `cluster_identifier` - (Required) The cluster identifier
 
-## Attribute Reference
+Attributes Reference
 
 In addition to all arguments above, the following attributes are exported:
 
